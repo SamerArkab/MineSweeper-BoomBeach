@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gameGUI.BoardCONTROLLER">
+   <children>
+        <GridPane fx:id="TheBoard" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        </GridPane>
+             <HBox alignment="BOTTOM_LEFT" fillHeight="false" layoutX="14.0" layoutY="560.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="700.0" AnchorPane.topAnchor="560.0">
+         <children>
+            <Button fx:id="BackMenu" mnemonicParsing="false" onAction="#BackMenu" text="Back to menu" />
+            <Button fx:id="ResetBoard" mnemonicParsing="false" onAction="#ResetBoard" text="Reset" textFill="RED">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="Music" mnemonicParsing="false" onAction="#Music" text="Music">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="winLose" layoutX="796.0" layoutY="535.0" text="Label" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#00e1ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
