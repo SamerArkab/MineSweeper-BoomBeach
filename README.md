@@ -13,6 +13,6 @@ One of my first fun projects for self improvement - trying new things using lear
 All necessary library files to run the project are included.
 
 #### Example run
-![image](./example_run/MS1.png) <br>
-![image](./example_run/MS2.png)
+![image](./example_run/MS1.PNG) <br>
+![image](./example_run/MS2.PNG)
 <br>
