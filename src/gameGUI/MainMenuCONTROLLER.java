@@ -73,7 +73,7 @@ public class MainMenuCONTROLLER {
 	@FXML
 	void NewGame(ActionEvent event) throws IOException {
 
-		Image backgroundColor = new Image("file:///C:/Users/samra/Documents/GitHub/MineSweeper-BoomBeach/Images/Mandalorian.png");
+		Image backgroundColor = new Image("file:///C:/Users/samra/Documents/GitHub/MineSweeper-BoomBeach/Images/backgroundImage.png");
 		BackgroundSize backgroundSize = new BackgroundSize(1280, 853, true, true, true, true);
 		BackgroundImage backgroundImage = new BackgroundImage(backgroundColor, BackgroundRepeat.NO_REPEAT,
 				BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, backgroundSize);
@@ -81,7 +81,7 @@ public class MainMenuCONTROLLER {
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(getClass().getResource("NewGameFXML.fxml"));
 		AnchorPane root = loader.load();
-//		root.setStyle("-fx-background-image: url(\"file:///C:/Users/samra/Documents/GitHub/MineSweeper-BoomBeach/Images/Mandalorian.png\")");
+//		root.setStyle("-fx-background-image: url(\"file:///C:/Users/samra/Documents/GitHub/MineSweeper-BoomBeach/Images/backgroundImage.png\")");
 		Scene scene = new Scene(root);
 		Stage GameStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 

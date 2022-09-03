@@ -101,7 +101,7 @@ public class NewGameCONTROLLER {
 		
 		game = new Mines(rows, columns, mines);
 
-		Image backgroundColor = new Image("file:///C:/Users/samra/Documents/GitHub/MineSweeper-BoomBeach/Images/Mandalorian.png");
+		Image backgroundColor = new Image("file:///C:/Users/samra/Documents/GitHub/MineSweeper-BoomBeach/Images/backgroundImage.png");
 		BackgroundSize backgroundSize = new BackgroundSize(1280, 853, true, true, true, true);
 		BackgroundImage backgroundImage = new BackgroundImage(backgroundColor, BackgroundRepeat.NO_REPEAT,
 				BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, backgroundSize);
@@ -110,7 +110,7 @@ public class NewGameCONTROLLER {
 		loader.setLocation(getClass().getResource("BoardFXML.fxml")); // fxml location
 
 		AnchorPane root = loader.load(); // Load layout
-//		root.setStyle("-fx-background-image: url(\"file:///C:/Users/samra/Documents/GitHub/MineSweeper-BoomBeach/Images/Mandalorian.png\")");
+//		root.setStyle("-fx-background-image: url(\"file:///C:/Users/samra/Documents/GitHub/MineSweeper-BoomBeach/Images/backgroundImage.png\")");
 		Scene scene = new Scene(root); // Create scene with chosen layout
 		Stage gameStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
@@ -243,7 +243,7 @@ public class NewGameCONTROLLER {
 		mines = Integer.parseInt(NumM.getText());
 		game = new Mines(rows, columns, mines);
 
-		Image backgroundColor = new Image("file:///C:/Users/samra/Documents/GitHub/MineSweeper-BoomBeach/Images/Mandalorian.png");
+		Image backgroundColor = new Image("file:///C:/Users/samra/Documents/GitHub/MineSweeper-BoomBeach/Images/backgroundImage.png");
 		BackgroundSize backgroundSize = new BackgroundSize(1280, 853, true, true, true, true);
 		BackgroundImage backgroundImage = new BackgroundImage(backgroundColor, BackgroundRepeat.NO_REPEAT,
 				BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, backgroundSize);
@@ -252,7 +252,7 @@ public class NewGameCONTROLLER {
 		loader.setLocation(getClass().getResource("BoardFXML.fxml")); // fxml location
 
 		AnchorPane root = loader.load(); // Load layout
-//		root.setStyle("-fx-background-image: url(\"file:///C:/Users/samra/Documents/GitHub/MineSweeper-BoomBeach/Images/Mandalorian.png\")");
+//		root.setStyle("-fx-background-image: url(\"file:///C:/Users/samra/Documents/GitHub/MineSweeper-BoomBeach/Images/backgroundImage.png\")");
 		Scene scene = new Scene(root); // Create scene with chosen layout
 		Stage gameStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 

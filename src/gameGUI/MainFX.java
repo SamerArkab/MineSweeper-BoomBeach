@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 
 public class MainFX extends Application {
 	static Media h = new Media(
-			Paths.get("C:\\Users\\samra\\Documents\\GitHub\\MineSweeper-BoomBeach\\Flavour-Wataboi.mp3").toUri()
+			Paths.get("C:\\Users\\samra\\Documents\\GitHub\\MineSweeper-BoomBeach\\Music\\Flavour-Wataboi.mp3").toUri()
 					.toString());
 	static MediaPlayer mediaPlayer = new MediaPlayer(h);;
 	static int onOoff = 0;
